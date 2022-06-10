@@ -7,3 +7,7 @@ html, body {
 .text-layout {
     color: var( --text-color );
 }
+
+.p-5{
+    padding-top: 50%;
+}

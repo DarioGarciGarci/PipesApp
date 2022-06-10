@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 
 //Personalizados
 import { SharedModule } from './shared/shared.module';
+import { AppRotingModule } from '../../../03-paises-app/src/app/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { SharedModule } from './shared/shared.module';
   ],
   imports: [
     BrowserModule,
-    SharedModule
+    SharedModule,
+    AppRotingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

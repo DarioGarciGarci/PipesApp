@@ -8,6 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NoComunesComponent implements OnInit {
 
+  //i18nSelect 
+  nombre: string = 'Susana';
+  genero: string = 'femenino';
+  invitacionMapa = {
+    'femenino': 'invitarla',
+    'masculino': 'invitarle'
+  }
+
+  //i18nPlural
+  clientes: string[] = ['Maria','Sara','Sergio'];
+  clientesMapa = {
+    '=0': 'no tenemos ningun cliente esperando',
+    '=1': 'no tenemos un cliente esperando',
+    '=2': 'tenemos dos cliente esperando',
+    'other': 'tenemos # cliente esperando',
+  }
+
   constructor() { }
 
   ngOnInit(): void {

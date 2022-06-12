@@ -10,6 +10,8 @@ export class OrdenarComponent implements OnInit {
 
   enMayus: boolean = false;
 
+  ordenarPor: string = '';
+
   heroes: Heroe[] = [
     {
       nombre: 'Ironman',
@@ -52,4 +54,7 @@ export class OrdenarComponent implements OnInit {
     this.enMayus = this.enMayus ? false : true;
   }
 
+  cambiarOrden(valor: string) {
+    this.ordenarPor = valor;
+  }
 }

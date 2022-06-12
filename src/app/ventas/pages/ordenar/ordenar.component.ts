@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrdenarComponent implements OnInit {
 
+  enMayus: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cambiarMayus(){
+    this.enMayus = this.enMayus ? false : true;
   }
 
 }
